@@ -5,7 +5,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
 const privateKey = process.env.PRIVATE_KEY; 
 const publicKey = process.env.PUBLIC_KEY;   
